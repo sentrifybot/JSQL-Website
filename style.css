@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #0284c7; /* Darker shade for better contrast */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+  position: fixed; /* Makes the navigation bar stay fixed on the screen */
+  top: 0; /* Aligns the navigation bar to the top of the screen */
+  width: 100%; /* Makes the navigation bar span the entire width of the screen */
+}
+
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.8rem; /* Slightly larger for emphasis */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  color: #ade8f4; /* Lighter shade when hovered */
+}
+
+header {
+  background: linear-gradient(135deg, #023e8a, #0077b6); /* Gradient for visual interest */
+  color: #ffffff;
+  padding: 4rem 0; /* Increased padding for a larger presence */
+  text-align: center;
+  margin-top: 65px;
+}
+
+section {
+  flex: 1;
+  padding: 2rem;
+  margin: 1rem auto; /* Center sections */
+  max-width: 800px; /* Limit content width */
+  animation: fadeInFromBottom 1.5s ease-out;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section#features ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+section#examples pre {
+  background-color: #eef; /* Lighter background for code block */
+  border-left: 4px solid #0077b6; /* Accent line */
+  padding: 1rem;
+  overflow-x: auto; /* Ensure code blocks are scrollable horizontally */
+}
+
+footer {
+  background-color: #023e8a; /* Match the header but darker */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2.5rem; /* Make H1 bigger */
+  animation: fadeInFromBottom 1.5s ease-out;
+}
+
+p {
+  font-size: 1.2rem; /* Make paragraph text bigger */
+  animation: fadeInFromBottom 1.5s ease-out;
+}
+.examples {
+  margin-top: 100px;
+}
+
+.nav-links {
+  margin-left: 1500px;
+}
